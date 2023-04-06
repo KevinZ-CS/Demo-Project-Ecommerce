@@ -58,12 +58,14 @@ return (
 
 
         <button type='button' className={`border-0 ${NavBarCSS.button} px-2`}>
-        {adminUser || user ? <div className='' onClick={handleAccClick}><FontAwesomeIcon icon={faUserCircle} /></div>
+        {adminUser || user ? <div className={NavBarCSS.icons} onClick={handleAccClick}><FontAwesomeIcon icon={faUserCircle} /></div>
                 : <div className={NavBarCSS.icons} onClick={() => dispatch(showLogin(true))} >Login</div> }
         </button>
 
         <button type='button' className={`border-0  ${NavBarCSS.button}`} onClick={() => dispatch(showCart(true))}>
+            <div className={NavBarCSS.icons}>
             <FontAwesomeIcon icon={faBagShopping} />
+            </div>
             {orderList&&orderList.length > 0 && !adminUser ? <span  className = {`${NavBarCSS.cartBadge} translate-middle badge`} >
             {orderList.reduce((accumulator, currentvalue) => accumulator + parseInt(currentvalue.quantity), 0)}</span> : null}  
         </button>
