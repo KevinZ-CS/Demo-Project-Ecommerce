@@ -68,7 +68,7 @@ return (
     <div className={ItemCardCSS.divider}>|</div>
 
     <Dropdown>
-    <Dropdown.Toggle as='button' className={`btn-sm ${ItemCardCSS.QtyDropdown}`} >
+    <Dropdown.Toggle as='button' className={`btn-sm ${ItemCardCSS.QtyDropdown} text-dark`} >
         Qty : {item.quantity}
     </Dropdown.Toggle>
 

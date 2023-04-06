@@ -109,7 +109,7 @@ function handleAddToCart(e) {
 return ( 
     isEmpty(item)&&!error ? null : error ?  
     <Container className={`${ItemPageCSS.margins} text-center`}><h1>{error.error} </h1></Container> : 
-    <Container className={`${ItemPageCSS.marginBottom} py-5 px-5 mt-4 text-center`} >
+    <Container className={`${ItemPageCSS.marginBottom} py-5 px-5 mt-5 text-center`} >
 
     <Row>    
     <Col lg={6} md={6} sm={12} className={`${ItemPageCSS.test}  test3 `} >

@@ -44,13 +44,13 @@ else { return null }
 
 return (
     <>
-    <Navbar className={`fixed-top ${NavBarCSS.navbar} bg-white` } expand='sm'>
+    <Navbar className={`fixed-top ${NavBarCSS.navbar} bg-white` } expand='md'>
     <Container>
         <NavLink to='/' className={`  ${NavBarCSS.navbrand}  d-flex`}>
-        <Navbar.Brand className={`text-uppercase fw-lighter ms-1  me-0 `}>Démo</Navbar.Brand>
+        <Navbar.Brand className={`${NavBarCSS.brandName} text-uppercase fw-lighter ms-1  me-0`}>Démo</Navbar.Brand>
         </NavLink>
 
-        <div className='order-sm-2 me-4'>
+        <div className={`${NavBarCSS.icons} order-md-2 me-4`}>
 
         <button type='button' className={`border-0 ${NavBarCSS.button} ${NavBarCSS.searchIcon}`} onClick={() => dispatch(showSearch(true))}>
             <FontAwesomeIcon icon={faSearch} className='d-none d-md-block ' />
@@ -73,7 +73,7 @@ return (
         <Navbar.Toggle aria-controls="responsive-navbar-nav" data-bs-target="#responsive-navbar-nav" className={`border-0 shadow-none ${NavBarCSS.burgerIcon} `} />
         <Navbar.Collapse id="responsive-navbar-nav " >
 
-        <Nav className="mx-auto nav text-center ">
+        <Nav className={`${NavBarCSS.centerNav} mx-auto nav text-center`}>
                       
         <NavDropdown title={<span className='text-uppercase text-dark text-center'>Shop</span>} renderMenuOnMount={true} 
         onMouseEnter={showLightBox} onMouseLeave={hideLightBox} id="basic-nav-dropdown" onToggle={() => {handleClick()}}

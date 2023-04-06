@@ -9,7 +9,7 @@ for(let i = 1; i <= Math.ceil(totalReviews / reviewsPerPage); i++) {
 return (
 <div>
     {pageNumbers.map(number => (
-    <button key={number} onClick={() => paginate(number)} className='border-0 bg-white px-1'>
+    <button key={number} onClick={() => paginate(number)} className='border-0 bg-white px-1 text-dark'>
         {number}
     </button>
     ))}

@@ -55,7 +55,7 @@ navigate("/searchPage")
 
 return (
             
-    <Modal show={showModal} onHide={handleClose} className='mt-3'>
+    <Modal show={showModal} onHide={handleClose} className='mt-4'>
     <Modal.Header className="border-0 pb-0" closeButton>
     <Modal.Title>Search</Modal.Title>
     </Modal.Header>

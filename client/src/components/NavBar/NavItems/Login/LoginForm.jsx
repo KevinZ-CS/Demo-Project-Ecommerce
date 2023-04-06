@@ -61,15 +61,15 @@ setPassword("JaneDoe12!")
 
 return (  
     <>
-    <Modal show={showLoginForm} onHide={handleClose} className='modal-sm mt-3'>
+    <Modal show={showLoginForm} onHide={handleClose} className='modal-md mt-4'>
     <Modal.Header closeButton className="border-0 pb-0">        
     </Modal.Header>
-    <Modal.Title className='text-center' >Login</Modal.Title>
+    <Modal.Title className={`${LoginFormCSS.modalTitle} text-center`} >Login</Modal.Title>
     <Modal.Body>
 
         <Form onSubmit={handleSubmit}>
 
-        <Form.Group className="mb-2" >
+        <Form.Group className="mb-2 pt-4" >
         <Form.Control
         type="email"
         placeholder="Email"
@@ -80,7 +80,7 @@ return (
         value={email} />
         </Form.Group>
 
-        <InputGroup className="mb-0" >
+        <InputGroup className="mb-0 pb-3" >
         <Form.Control
         type={showPassword ? 'text' : 'password'}
         placeholder="Password"
@@ -99,7 +99,9 @@ return (
 
         </InputGroup>
 
-        <div className="text-center mb-4 mt-4">
+        <div className="text-center mb-4 mt-1">
+        <button className={`${LoginFormCSS.button} mb-4`} type="submit" >Sign In</button>
+        <br />
             <a className={LoginFormCSS.loginAdmin} href="/adminLogin">Click here for admin login.</a>
         </div>
         
@@ -109,17 +111,19 @@ return (
         I agree to the Kévin Terms and the Website Terms of Use. For more information about our privacy policy, see our Privacy Policy.
         </p>
         
-        <Row className='px-3'>
-            <Col className='text-center mb-3 col-6'>
+        {/* <Row className='px-5'> */}
+            {/* <Col className='text-center mb-3 col-6'>
             <button className={`${LoginFormCSS.button}`} type="submit" >Sign In</button>
-            </Col>
-            <Col className='text-center mb-3 col-6'>
+            </Col> */}
+            {/* <Col className='text-center mb-3 col-6'> */}
+            <div className='text-center pb-3'>
             <button className={`${LoginFormCSS.buttonDemo}`} onClick={handleDemoClick} >Demo User</button>
-            </Col>
-        </Row>
+            </div>
+            {/* </Col> */}
+        {/* </Row> */}
 
         <div className={`${LoginFormCSS.createAcc} text-center mb-3 mx-auto`}>
-        <span>New to Kévin? </span>
+        <span className={LoginFormCSS.newToDemo}>New to Démo? </span>
         <NavLink to='/signup' className={LoginFormCSS.noStyle} onClick={handleClose}>Create Account</NavLink>
         </div>
 

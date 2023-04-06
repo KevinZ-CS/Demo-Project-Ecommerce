@@ -26,13 +26,14 @@ margin-left: 16px;
 }
 
 .body-items {
-font-size: 10px;
+font-size: 15px;
 }
 
 .subHeader {
 padding-left: 15px;
 padding-bottom: 0px;
 font-weight: bold;
+font-size: 20px;
 }
 
 .searchIcon {
@@ -47,7 +48,7 @@ right: 20px;
 }
 
 .cartBadge {
-font-size: 8px;
+font-size: 11px;
 background-color:#e5345b;
 }
 
@@ -58,3 +59,15 @@ display: none;
 }
 
 
+.brandName {
+font-size: 25px ;
+}
+
+.icons {
+font-size: 20px;
+color: #000 !important;
+}
+
+.centerNav {
+font-size: 20px;
+}
