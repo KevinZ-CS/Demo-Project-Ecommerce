@@ -63,9 +63,9 @@ return (
         </button>
 
         <button type='button' className={`border-0  ${NavBarCSS.button}`} onClick={() => dispatch(showCart(true))}>
-            <div className={NavBarCSS.icons}>
-            <FontAwesomeIcon icon={faBagShopping} />
-            </div>
+       
+            <FontAwesomeIcon icon={faBagShopping} className={NavBarCSS.icons}/>
+     
             {orderList&&orderList.length > 0 && !adminUser ? <span  className = {`${NavBarCSS.cartBadge} translate-middle badge`} >
             {orderList.reduce((accumulator, currentvalue) => accumulator + parseInt(currentvalue.quantity), 0)}</span> : null}  
         </button>
