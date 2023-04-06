@@ -19,6 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 1.day, at: '12:00am' do
-    rake "delete:old_records"
-end
+# every 1.day, at: '12:00am' do
+#     rake "delete:old_records"
+# end
