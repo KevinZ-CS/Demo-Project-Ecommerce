@@ -50,7 +50,7 @@ return (
         <Navbar.Brand className={`${NavBarCSS.brandName} text-uppercase fw-lighter ms-1  me-0`}>Démo</Navbar.Brand>
         </NavLink>
 
-        <div className={`${NavBarCSS.icons} order-md-2 me-4`}>
+        <div className='order-md-2 me-4'>
 
         <button type='button' className={`border-0 ${NavBarCSS.button} ${NavBarCSS.searchIcon}`} onClick={() => dispatch(showSearch(true))}>
             <FontAwesomeIcon icon={faSearch} className='d-none d-md-block ' />
@@ -59,7 +59,7 @@ return (
 
         <button type='button' className={`border-0 ${NavBarCSS.button} px-2`}>
         {adminUser || user ? <div className='' onClick={handleAccClick}><FontAwesomeIcon icon={faUserCircle} /></div>
-                : <div className='' onClick={() => dispatch(showLogin(true))}>Login</div> }
+                : <div className={NavBarCSS.icons} onClick={() => dispatch(showLogin(true))} >Login</div> }
         </button>
 
         <button type='button' className={`border-0  ${NavBarCSS.button}`} onClick={() => dispatch(showCart(true))}>

@@ -66,6 +66,7 @@ font-size: 25px ;
 .icons {
 font-size: 20px;
 color: #000 !important;
+text-decoration: none;
 }
 
 .centerNav {
