@@ -1,5 +1,5 @@
 .canvasSize {
-width: 300px!important;
+width: 320px!important;
 background-color: #352e44;
 opacity: 90%;
 }
@@ -10,7 +10,7 @@ border-width: thin!important;
 border-color: white;
 width: 150px;
 height: 44px;
-margin-top: 610px;
+margin-top: 20px;
 }
   
 .button:hover {

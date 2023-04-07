@@ -1,6 +1,6 @@
 import ItemCardCSS from './ItemCard.module.css';
 import './ItemCardCustom.css';
-import { Container, Dropdown, Card } from 'react-bootstrap';
+import { Container, Dropdown, Card, Row, Col } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 import { deleteOrder, orderDeleted, updateOrderList, addOrderToList } from '../../../../ordersSlice';
 import { useDispatch, useSelector } from "react-redux";
@@ -63,9 +63,10 @@ return (
         <NavLink to={`/items/${item.item.id}`} className={ItemCardCSS.itemName} onClick={handleClickName}><Card.Text>{item.item.name}</Card.Text></NavLink>
             
     <Container className="selectSize">
-
-    <div className={ItemCardCSS.ItemSizeFont}>{item.size}</div>
-    <div className={ItemCardCSS.divider}>|</div>
+  
+    
+    <span className={`${ItemCardCSS.ItemSizeFont} ms-0`}>{item.size}</span>
+    <span className={ItemCardCSS.divider}>|</span>
 
     <Dropdown>
     <Dropdown.Toggle as='button' className={`btn-sm ${ItemCardCSS.QtyDropdown} text-dark`} >

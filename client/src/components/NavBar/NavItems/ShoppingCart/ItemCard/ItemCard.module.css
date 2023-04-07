@@ -1,5 +1,6 @@
 .cardBorder {
 border: none;
+align-items: flex-start;
 }
   
 .imgSize {
@@ -25,32 +26,35 @@ font-size: 14px;
 }
 
 .ItemSizeFont {
-font-size: 10px;
-position: absolute;
-top: 88px;
-left: 120px;
+font-size: 14px;
+margin-left: -10px !important;
+/* position: absolute; */
+/* top: 88px;
+left: 120px; */
 }
   
 .divider {
-position:absolute;
-left: 129px;
-top: 83px;
+/* position:absolute; */
+/* left: 129px;
+top: 83px; */
+padding-left: 5px;
 border: none;
 opacity: 35%;
 }
 
 .QtyDropdown {
 background-color: #fff;
-font-size: 10px;
-width: 100px;
+font-size: 14px;
+/* width: 100px; */
 border: none;
-padding-right: 54px;
+/* padding-right: 54px; */
 position: absolute;
-top: 9px;
-left: 5px;
+top: -23px;
+left: 11px;
 }
    
 .dropdownItemBg:hover {
 background-color:  rgb(237, 234, 234);
 color: #000;
 }
+
