@@ -120,7 +120,7 @@ return (
     
     <div className = "  text-md-start">
 
-    <div className = "pb-3">
+    <div className = {`${ItemPageCSS.fontSize} pb-3` }>
     <h2 className = "position-relative d-inline-block">{item.name}</h2>
     <br />
     <div className={ItemPageCSS.starRating} >

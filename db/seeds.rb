@@ -9,7 +9,7 @@
 
 AdminUser.create!(first_name: 'john', last_name: 'smith', access_type: 'Admin', email: "johnsmith@gmail.com", password: 'JohnSmith12!', password_confirmation: 'JohnSmith12!', terms_of_service: true )
 
-User.create!(first_name: 'sarah', last_name: 'smith', access_type: 'Customer', email: "janedoe@gmail.com", password: 'JaneDoe12!', password_confirmation: 'JaneDoe12!', terms_of_service: true )
+User.create!(first_name: 'sarah', last_name: 'smith', access_type: 'Customer', email: "sarahsmith@gmail.com", password: 'SarahSmith12!', password_confirmation: 'SarahSmith12!', terms_of_service: true )
 
 image1 = Item.create!(name: 'Green Polo', size: 'M', category: "Top", sub_category: "polos", quantity: 20, price: 50, description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ea laudantium voluptatum vel harum ad quia esse aspernatur nobis. Quod distinctio velit cum voluptas quaerat corporis recusandae quisquam consequuntur aliquam!')
 image1.featured_image.attach( io: File.open(Rails.root.join("./assets/images/image1.png")), filename: 'image1.png')

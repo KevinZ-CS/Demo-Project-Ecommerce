@@ -29,7 +29,7 @@ function capitalized(word) {
 }
 
 return (
-    <Col xl={3} lg={4} md={6}>
+    <Col xl={3} lg={4} md={6} >
     <Card style={{ width: '16rem' }} className='m-1 w-100 border-0'> 
     <Card.Header className={`${ItemCSS.cardHeader}`} >
         {adminUser ?   <>
@@ -50,9 +50,9 @@ return (
         </span> :
         null }
         </NavLink>
-        <div className = "text-center">
+        <div className={`${ItemCSS.fontSize} text-center`}>
             <NavLink to={'/items/'+ `${item.id}`} className={`${ItemCSS.itemName}`}>
-            <p  className = "text-capitalize my-1">{item.name}</p>
+            <p  className={`${ItemCSS.fontSize} text-center text-capitalize my-1`} >{item.name}</p>
             </NavLink>
         <div className = "fw-bold">${item.price}</div>
         </div>

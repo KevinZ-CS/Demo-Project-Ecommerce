@@ -19,12 +19,12 @@ border-color: black;
 }
 
 .add-item .form-label {
-font-size: 12px;
+font-size: 15px;
 margin-bottom: 0px; 
 }
 
 .add-item .form-select {
-font-size: 12px;
+font-size: 15px;
 }
 
 .add-item .form-select:focus {

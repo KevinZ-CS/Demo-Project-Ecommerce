@@ -172,7 +172,7 @@ function submitAdminUser (data) {
         <p className={`${SignUpFormCSS.footerText} text-center text-muted mt-3 mb-`}>Already have an account? 
         <span 
         className="fw-bold text-body" >
-        <button type='button' className={`${SignUpFormCSS.loginbtn} px-0`} onClick={() => dispatch(showLogin(true))}>
+        <button type='button' className={`${SignUpFormCSS.loginbtn} px-1`} onClick={() => dispatch(showLogin(true))}>
         <u>Login here</u>
         </button></span>
         </p>

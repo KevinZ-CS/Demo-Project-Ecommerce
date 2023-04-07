@@ -64,11 +64,11 @@ return (
         </Row>
     </Container>
         
-    <Modal show={showDeleteModal} className='modal-sm mt-3' onHide={handleClose}>
+    <Modal show={showDeleteModal} className='modal-md mt-4' onHide={handleClose}>
         
     <Modal.Header closeButton className={`${ItemListCSS.modalHeader} `} />
     <Modal.Title className='text-center'> <FontAwesomeIcon icon={faCheckCircle} className={`${ItemListCSS.checkIcon2}`} /></Modal.Title>
-    <Modal.Body className='text-center text-muted'>Item has been successfully deleted.</Modal.Body> 
+    <Modal.Body className={`${ItemListCSS.deleteModalFont} text-center text-muted`}>Item has been successfully deleted.</Modal.Body> 
     </Modal>
     </>
     )

@@ -45,7 +45,7 @@ return (
     
     <Offcanvas show={showShoppingCart} onHide={handleClose} placement='end' className={ShoppingCartCSS.canvasSize}>
     <Offcanvas.Header closeButton>
-    <Offcanvas.Title>My Bag</Offcanvas.Title>
+    <Offcanvas.Title className={ShoppingCartCSS.headerText}>My Bag</Offcanvas.Title>
     
     </Offcanvas.Header>
     <hr  className="mt-0"/>
@@ -62,7 +62,7 @@ return (
     CHECKOUT
     </Button>
     </div>
-    </Container> : <div className="fw-bold">Your bag is currently empty.</div>}
+    </Container> : <div className={`${ShoppingCartCSS.defaultMsg} fw-bold`}>Your bag is currently empty.</div>}
 
     </Offcanvas.Body>    
     </Offcanvas> )

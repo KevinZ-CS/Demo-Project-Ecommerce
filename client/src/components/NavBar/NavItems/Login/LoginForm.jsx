@@ -55,8 +55,8 @@ if (response.ok) {
     }
 
 function handleDemoClick() {
-setEmail("janedoe@gmail.com")
-setPassword("JaneDoe12!")
+setEmail("sarahsmith@gmail.com")
+setPassword("SarahSmith12!")
 }
 
 return (  

@@ -190,7 +190,7 @@ function handleSubmit(e) {
             <p className={`${AdminSignUpCSS.footerText} text-center text-muted mt-3 mb-`}>Already have an account? 
             <span 
             className="fw-bold text-body" >
-            <button type='button' className={`${AdminSignUpCSS.loginbtn} px-0`}><NavLink to="/adminLogin">Login here</NavLink></button>
+            <button type='button' className={`${AdminSignUpCSS.loginbtn} px-1`}><NavLink to="/adminLogin">Login here</NavLink></button>
             </span>
             </p>
             </Col>

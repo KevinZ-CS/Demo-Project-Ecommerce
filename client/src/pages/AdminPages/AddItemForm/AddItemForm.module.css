@@ -1,9 +1,9 @@
 .titleFontSize {
-font-size: 30px;
+font-size: 40px;
 }
 
 .container {
-margin-top: 30px;
+margin-top: 100px;
 margin-bottom: 50px;
 }
 
@@ -11,6 +11,7 @@ margin-bottom: 50px;
 border-radius: 0px;
 padding: 4px 14px;
 float: right;
+font-size: 20px;
 }
 
 .button:hover {
@@ -21,10 +22,11 @@ border-color: white;
 border-radius: 0px;
 padding: 4px 14px;
 float: right;
+font-size: 20px;
 }
 
 .errorMsg {
-font-size: 10px !important;
+font-size: 13px !important;
 }
 
 
