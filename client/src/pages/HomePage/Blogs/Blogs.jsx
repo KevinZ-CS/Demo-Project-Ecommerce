@@ -11,7 +11,7 @@ return(
 
     <Row className="g-3">
     <Card className = "border-0 col-md-6 col-lg-4 bg-transparent my-3">
-        <img src ={require('../../../assets/blog3.jpg')} alt = ""/>
+        <img src ={require('../../../assets/blog3.jpg')} alt = "" className='img-fluid'/>
         <div className = "card-body px-0">
         <h4 className = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
         <p className = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
@@ -24,7 +24,7 @@ return(
     </Card>
 
     <Card className = "border-0 col-md-6 col-lg-4 bg-transparent my-3 blog1">
-        <img src ={require('../../../assets/blog1.jpg')} alt = ""/>
+        <img src ={require('../../../assets/blog1.jpg')} alt = "" className='img-fluid'/>
         <div className = "card-body px-0">
         <h4 className = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
         <p className = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
@@ -37,7 +37,7 @@ return(
     </Card>
 
     <Card className = "border-0 col-md-6 col-lg-4 bg-transparent my-3">
-        <img src ={require('../../../assets/blog2.jpg')} alt = ""/>
+        <img src ={require('../../../assets/blog2.jpg')} alt = "" className='img-fluid'/>
         <div className = "card-body px-0">
         <h4 className = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
         <p className = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
