@@ -53,7 +53,7 @@ function AddItemForm() {
             })
             .then((response) => {
                 if(response.ok) {
-                    response.json().then((newItem) => {console.log(newItem)
+                    response.json().then((newItem) => {
                     dispatch(addItemToList(newItem))
                     setItem({
                         name: '',
