@@ -16,7 +16,11 @@ const itemsDisplay = itemsList&&itemsList.filter(
    );
 
 function capitalized(word) {
+    if(word === 'tshirts') {
+        return 'T-Shirts'
+    } else {
     return word.charAt(0).toUpperCase() + word.slice(1)
+    } 
 }
 
 return (
