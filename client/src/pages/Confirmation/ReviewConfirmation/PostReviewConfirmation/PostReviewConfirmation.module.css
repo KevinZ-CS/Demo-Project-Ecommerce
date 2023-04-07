@@ -1,5 +1,5 @@
 .margins {
-margin-top: 120px;
+margin-top: 150px;
 width: 50%;
   }
 
@@ -17,4 +17,5 @@ color: rgb(22, 205, 116);
 .button {
 border-radius: 0px;
 padding: 8px 20px;
+font-size: 20px;
 }

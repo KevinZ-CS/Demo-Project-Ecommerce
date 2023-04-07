@@ -21,10 +21,10 @@ Fork and clone this repo. Then install the dependencies by running:
 ```
 npm install
 ```
-
-Repo for the back-end can be found at this link:
-
-https://github.com/KevinZ-CS/project-ecommerce-backend
+To run the frontend server, run:
+```
+npm start 
+```
 
 ## Usage
 The features of this application include:

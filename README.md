@@ -18,20 +18,23 @@ uses PostgreSQL as the primary database.
 Fork and clone this repo. Then install the dependencies by running:
 
 ```
+npm install --prefix client
+```
+```
 bundle install
 ```
 To seed the database with sample data, run:
 ```
 rails db:seed
 ```
-To run the server, run:
+To run the backend server, run:
 ```
 rails s
 ```
-
-Repo for the front-end can be found at this link:
-
-https://github.com/KevinZ-CS/project-ecommerce-client
+To run the frontend server, run:
+```
+npm start --prefix client
+```
 
 ## Usage
 The features of this application include:

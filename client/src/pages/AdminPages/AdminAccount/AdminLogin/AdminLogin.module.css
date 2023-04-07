@@ -12,7 +12,8 @@ background-color: black;
 color: #fff ;
 border-color: black;
 border-radius: 0px;
-font-size: 20px;
+font-size: 16px;
+height: 35px;
 }
 
 .button:hover {
