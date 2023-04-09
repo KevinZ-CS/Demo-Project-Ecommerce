@@ -22,7 +22,7 @@ return (
             searchDisplay.map((item) => <Item key={item.id} item={item} />) : showSearch ? 
             <Container className={SearchPageCSS.bottomMargin2}></Container> :
             <div className="text-center mt-5 mb-5">Sorry, nothing matched 
-            <span className="fw-bold" >'{searchInput}'</span>. Check out other items in our store. </div>}
+            <span className="fw-bold" > '{searchInput}'</span>. Check out other items in our store. </div>}
             </div>
 
         </Row>
