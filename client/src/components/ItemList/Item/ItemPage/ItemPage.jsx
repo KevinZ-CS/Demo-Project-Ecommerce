@@ -113,7 +113,7 @@ return (
 
     <Row>    
     <Col lg={6} md={6} sm={12} className={`${ItemPageCSS.test}  test3 `} >
-    <img src={item.featured_image.url} alt = "" className=" ms-lg-5 ms-md-0 ms-sm-0  "/>
+    <img src={item.featured_image.url} alt = "" className={`${ItemPageCSS.image} ms-lg-5 ms-md-0 ms-sm-0`}/>
     </Col>
 
     <Col  lg={6} md={6} sm={12} className={`${ItemPageCSS.test}`}>

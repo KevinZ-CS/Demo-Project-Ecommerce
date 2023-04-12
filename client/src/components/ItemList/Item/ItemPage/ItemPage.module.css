@@ -81,3 +81,8 @@ color: #000;
 .dropdownItemBg {
 padding-left: 14px;
 }
+
+.image {
+  max-width: 225px;
+  max-height: 311px;
+}
