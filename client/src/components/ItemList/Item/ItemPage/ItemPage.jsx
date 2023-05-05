@@ -35,7 +35,6 @@ const adminUser = useSelector((state) => state.users.adminUser )
 
 let userId = 0
 
-
 function pluck(array, key) {
     return array.map(o => o[key]);
   }

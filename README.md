@@ -3,50 +3,65 @@ Project is actively being worked on. Issues and Pull Requests are welcomed.
 
 ## Project Ecommerce
 
-Project Ecommerce is an online shopping web application where users can freely 
-browse items listed on the webstore and add items to their shopping cart. After 
-being satisfied with the items in their cart, the user can then checkout and securely 
-pay through the Stripe payment gateway. In addition, users can create an account and leave 
-reviews for items that other shoppers can view.
+Project Ecommerce is an intuitive and convenient online shopping web application that offers an extensive selection of products to users. Customers can easily browse items listed on the webstore and add items to their shopping cart. After selecting the desired items, users can securely checkout and pay through the Stripe payment gateway.
 
-The frontend for this application is built using ReactJS with styling from React-
-Bootstrap. Redux Toolkit is also introduced in this application for global 
-state management. On the other side, the backend utilizes a Rails API and 
-uses PostgreSQL as the primary database.
+Moreover, the application provides users with the ability to create an account and leave reviews for items that other shoppers can view. This enables customers to make informed purchase decisions based on the experiences of other shoppers.
+
+The frontend for this application is built using ReactJS with styling from React-Bootstrap. Redux Toolkit is also utilized in this application for global state management, ensuring smooth and seamless user experience.
+
+The backend is built on a Rails API and utilizes PostgreSQL as the primary database, providing a robust and reliable platform for the application.
 
 ## Installation
-Fork and clone this repo. Then install the dependencies by running:
 
+1. Fork and clone this repo.
+
+2. Install the dependencies for the frontend by running the following command in the project directory:
 ```
 npm install --prefix client
 ```
+
+3. Install the dependencies for the backend by running the following command in the project directory:
 ```
 bundle install
 ```
-To seed the database with sample data, run:
+
+4. Set up the PostgreSQL database by running the following commands:
+```
+rails db:create
+rails db:migrate
+```
+
+5. Seed the database with sample data by running:
 ```
 rails db:seed
 ```
-To run the backend server, run:
+
+## Running the Application
+
+1. Start the backend server by running the following command in the project directory:
 ```
 rails s
 ```
-To run the frontend server, run:
+
+2. Start the frontend server by running the following command in the project directory: 
 ```
 npm start --prefix client
 ```
 
+After following the above steps, you should be able to access the application in your browser by visiting http://localhost:3000.
+
+Note: Before running the application, make sure you have a valid Stripe API key and set it in the environment variables.
+
 ## Usage
-The features of this application include:
+Project Ecommerce provides the following features:
 
-1. Full CRUD when logged in as an admin user. As an admin, the user can create,
-   read, update and delete items on the website. In addition, the admin can 
-   delete reviews by the customers.
+1. Full CRUD for admin users. Admins can create, read, update, and delete items on the website. They can also manage customer reviews by deleting them.
 
-2. Full CRUD as a customer. The user can add items to their cart, remove items from their cart,
-   and update the quantity of the items in their cart.
+2. Full CRUD for customer users. Customers can browse items on the website, add items to their cart, remove items from their cart, and update the quantity of items in their cart.
 
-3. Checkout capabilities where customers can securely pay through the Stripe payment gateway.
+3. Secure checkout through the Stripe payment gateway. Customers can make payments for their purchases with confidence.
+
+4. Review system where customers can leave feedback on items they have purchased. These reviews are visible to other customers and can help them make informed decisions about their purchases.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
